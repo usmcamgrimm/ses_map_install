@@ -16,12 +16,12 @@ function App() {
           <Route path='/login' component={Login} />
         </Switch>
       </Router>
-      <header className="App-header">
+      <div className="ses-welcome">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Log in to get started.
         </p>
-      </header>
+      </div>
     </div>
   );
 }

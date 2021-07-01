@@ -1,18 +1,43 @@
+/** @jsxImportSource @emotion/react */
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../resources/logo.png'
+import { jsx, css } from '@emotion/react'
+import styled from '@emotion/styled'
 // import { MdMenu } from 'react-icons/md'
+
+const Nav = styled.div`
+  background-color: #031f30;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+`
+const NavMenu = styled.div`
+  margin-right: 250px;
+`
+const NavLinks = styled(Link)`
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding-right: 12px;
+`
 
 const Navbar = () => {
   return (
-    <div className="Nav">
-      <img src={logo} className="nav-logo" alt="logo" />
-      <div className="NavMenu">
-        <Link to='/'>Home</Link>
-        <Link to='/install'>Install</Link>
-        <Link to='/login'>Log In</Link>
-      </div>
-    </div>
+    <Nav>
+      <img 
+        css={{ width: 250 }}
+        src={logo} 
+        alt="logo" 
+      />
+      <NavMenu>
+        <NavLinks to='/'>Home</NavLinks>
+        <NavLinks to='/install'>Install</NavLinks>
+        <NavLinks to='/login'>Log In</NavLinks>
+      </NavMenu>
+    </Nav>
   )
 }
 
