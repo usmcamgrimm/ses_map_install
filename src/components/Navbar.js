@@ -21,7 +21,7 @@ const NavMenu = styled.div`
 const NavLinks = styled(Link)`
   font-size: 1.5rem;
   color: #ffffff;
-  padding-right: 12px;
+  margin-right: 12px;
   text-decoration: none;
   &:hover {
     border-bottom: 3px solid #fc273f;
