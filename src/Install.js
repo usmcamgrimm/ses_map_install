@@ -4,6 +4,11 @@ import './App.css';
 import { jsx, css } from '@emotion/react'
 import styled from '@emotion/styled'
 
+const FormWrapper = styled.div`
+  margin: 0 auto;
+  background-color: #031f30;
+`
+
 function Install() {
   const formik = useFormik({
     initialValues: {
@@ -19,7 +24,7 @@ function Install() {
     }
   })
   return (
-    <div>
+    <FormWrapper>
       <form onSubmit={formik.handleSubmit}>
         <label htmlFor="csNumber">CS Number</label>
         <input
@@ -71,7 +76,7 @@ function Install() {
         />
         <button type="submit">Submit</button>
       </form>
-    </div>
+    </FormWrapper>
   );
 }
 
