@@ -12,7 +12,7 @@ function Home() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path='/' wcomponent={Home} />
+          <Route path='/' component={Home} />
           <Route path='/Install' component={Install} />
           <Route path='/login' component={Login} />
         </Switch>
