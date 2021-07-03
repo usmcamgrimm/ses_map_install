@@ -6,8 +6,8 @@ export default function Layout({ children }) {
     <>
       <nav>
         <Link to='/'>Home</Link>
-        <Link to='/app'>App</Link>
-        <Link to='install'>Install</Link>
+        <Link to='/install'>Install</Link>
+        <Link to='/login'>Login</Link>
       </nav>
       <main>
         {children}
