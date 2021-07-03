@@ -1,1 +1,11 @@
 node_modules/
+.cache/
+public
+.env*
+.npm
+.eslintcache
+*.tgz
+build/release
+logs
+*.log
+npm-debug.log*
