@@ -1,12 +1,12 @@
 import React from 'react'
-import Layout from '../components/Layout'
 
-export default function Install() {
+import Layout from '../components/Layout'
+import InstallData from '../components/Installdata'
+
+export default function App() {
   return (
     <Layout>
-      <h1>
-        Installation Checklist
-      </h1>
+      <InstallData />
     </Layout>
   )
 }
