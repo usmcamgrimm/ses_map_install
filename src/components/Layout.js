@@ -5,8 +5,8 @@ import { Global, css } from '@emotion/react'
 import styled from '@emotion/styled'
 
 const Wrapper = styled.div`
-  background: #031f30;
   font-family: sans-serif;
+  color: #ffffff;
 `
 
 export default function Layout({ children }) {
