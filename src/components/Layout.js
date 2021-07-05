@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Navbar from './Navbar'
 import '../css/typography.css'
+import '../css/Layout.css'
 
 import { Global, css } from '@emotion/react'
 import styled from '@emotion/styled'
@@ -9,15 +9,12 @@ import styled from '@emotion/styled'
 const Wrapper = styled.div`
   color: #ffffff;
   font-family: Securitas, sans-serif;
-  font-weight: normal;
-  font-kerning: normal;
 `
 
 export default function Layout({ children }) {
   return (
     <>
       <Wrapper>
-        <Navbar />
         <Global
           styles={css`
             div {
@@ -25,6 +22,7 @@ export default function Layout({ children }) {
             }
           `}
         />
+        <Navbar />
         { children }
       </Wrapper>
     </>
