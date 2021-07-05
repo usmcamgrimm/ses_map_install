@@ -11,6 +11,19 @@ const Nav = styled.div`
   border-bottom: 1px solid rgba(255,255,255,.2);
 `
 
+const LinksContainer = styled.div`
+  display: flex;
+  margin-right: 3rem;
+`
+
+const NavLink = styled(Link)`
+  color: #ffffff;
+  font-family: Securitas;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  text-decoration: none;
+`
+
 export default function Navbar() {
   return (
     <Nav>
@@ -20,11 +33,11 @@ export default function Navbar() {
         width={250}
         alt="SES logo"
       />
-      <div className="LinksContainer">
-        <Link to='/'>Home</Link>
-        <Link to='/install'>Install</Link>
-        <Link to='/appData'>Completed</Link>
-      </div>
+      <LinksContainer>
+        <NavLink to='/'>Home</NavLink>
+        <NavLink to='/install'>Install</NavLink>
+        <NavLink to='/appData'>Completed</NavLink>
+      </LinksContainer>
     </Nav>
   )
 }
