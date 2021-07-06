@@ -9,6 +9,7 @@ import styled from '@emotion/styled'
 const Wrapper = styled.div`
   color: #ffffff;
   font-family: Securitas, sans-serif;
+  height: 100vh;
 `
 
 export default function Layout({ children }) {
