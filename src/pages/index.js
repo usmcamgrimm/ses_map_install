@@ -1,4 +1,5 @@
 import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 import Layout from '../components/Layout'
 
 import styled from '@emotion/styled'
@@ -7,7 +8,7 @@ import { css } from '@emotion/react'
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 `
 
@@ -16,11 +17,14 @@ export default function Index() {
     <Layout>
       <Container>
         <h1>
-          Securitas Electronic Security
-        </h1>
-        <h2>
           Managed Assets Portal
-        </h2>
+        </h1>
+        <StaticImage
+          src="../resources/logo.png"
+          layout="constrained"
+          placeholder="blurred"
+          alt="SES logo"
+        />
       </Container>
     </Layout>
   )
