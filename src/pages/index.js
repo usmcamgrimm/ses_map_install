@@ -22,7 +22,7 @@ export default function Index() {
         <StaticImage
           src="../resources/logo.png"
           layout="constrained"
-          placeholder="blurred"
+          placeholder="tracedSVG"
           alt="SES logo"
         />
       </Container>

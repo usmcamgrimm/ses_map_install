@@ -31,6 +31,7 @@ export default function Navbar() {
         src="../resources/logo.png"
         layout="fixed"
         width={250}
+        placeholder="blurred"
         alt="SES logo"
       />
       <LinksContainer>
