@@ -9,27 +9,31 @@ const Title = styled.h1`
   font-family: Securitas;
   font-size: 1.8rem;
   font-weight: normal;
-  margin-top: 2rem;
+  margin: 2rem;
   text-align: center;
 `
 
 const FormFields = styled.div`
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 125px 125px 125px 125pxx;
   grid-template-rows: auto;
   grid-template-areas:
     "csLabel . customerLabel ."
     "cs-area cs-area customer-area customer-area"
-    "address-label . . ."
+    "addressLabel . . ."
     "address-area address-area address-area address-area"
-    "city-label . state-label zip-label"
+    "cityLabel . stateLabel zipLabel"
     "city-area city-area state-area zip-area";
   grid-gap: 12px;
   border: 2px solid #fc273f;
   border-radius: 6px;
-  padding: 12px;
+  padding: 12px 18px 12px 2px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .5);
   margin-bottom: 2rem;
+  width: 60vw;
+  @media screen and (min-width: 1024px) {
+    width: 30vw;
 `
 
 const InputField = ({ label, ...props }) => {
@@ -88,6 +92,10 @@ export default function Install() {
           <label
             htmlFor="csNumber"
             className="csLabel"
+            css={{
+              gridArea: "csLabel",
+              paddingLeft: "2px"
+            }}
           >
             CS Number
           </label>
@@ -97,11 +105,20 @@ export default function Install() {
             className="csInputField"
             type="text"
             placeholder="CS Number"
+            css={{
+              gridArea: "cs-area",
+              padding: "4px",
+              borderRadius: "4px"
+            }}
           />
 
           <label
             htmlFor="customer"
             className="customerLabel"
+            css={{
+              gridArea: "customerLabel",
+              paddingLeft: "2px"
+            }}
           >
             Customer
           </label>
@@ -111,11 +128,20 @@ export default function Install() {
             className="customerInputField"
             type="text"
             placeholder="Customer Name"
+            css={{
+              gridArea: "customer-area",
+              padding: "4px",
+              borderRadius: "4px"
+            }}
           />
 
           <label
             htmlFor="address"
             className="addressLabel"
+            css={{
+              gridArea: "addressLabel",
+              paddingLeft: "2px"
+            }}
           >
             Address
           </label>
@@ -125,11 +151,20 @@ export default function Install() {
             className="addressInputField"
             type="text"
             placeholder="Address"
+            css={{
+              gridArea: "address-area",
+              padding: "8px",
+              borderRadius: "4px"
+            }}
           />
 
           <label
             htmlFor="city"
             className="cityLabel"
+            css={{
+              gridArea: "cityLabel",
+              paddingLeft: "2px"
+            }}
           >
             City
           </label>
@@ -139,11 +174,20 @@ export default function Install() {
             className="cityInputField"
             type="text"
             placeholder="City"
+            css={{
+              gridArea: "city-area",
+              padding: "8px",
+              borderRadius: "4px"
+            }}
           />
 
           <label
             htmlFor="stateField"
             className="stateLabel"
+            css={{
+              gridArea: "stateLabel",
+              paddingLeft: "2px"
+            }}
           >
             State
           </label>
@@ -153,11 +197,20 @@ export default function Install() {
             className="stateInputField"
             type="text"
             placeholder="State"
+            css={{
+              gridArea: "state-area",
+              padding: "8px",
+              borderRadius: "4px"
+            }}
           />
 
           <label
             htmlFor="zip"
             className="zipLabel"
+            css={{
+              gridArea: "zipLabel",
+              paddingLeft: "2px"
+            }}
           >
             Zip Code
           </label>
@@ -167,6 +220,11 @@ export default function Install() {
             className="zipInputField"
             type="text"
             placeholder="ZIP"
+            css={{
+              gridArea: "zip-area",
+              padding: "8px",
+              borderRadius: "4px"
+            }}
           />
         </FormFields>
 
