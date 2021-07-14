@@ -5,18 +5,37 @@ import Layout from '../components/Layout'
 
 import styled from '@emotion/styled'
 
-const title = styled.h1`
+const Title = styled.h1`
   font-family: Securitas;
   font-size: 1.8rem;
   font-weight: normal;
   margin-top: 2rem;
   text-align: center;
 `
+
+const FormFields = styled.div`
+  display: grid;
+  grid-template-columns: 125px 125px 125px 125pxx;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "csLabel . customerLabel ."
+    "cs-area cs-area customer-area customer-area"
+    "address-label . . ."
+    "address-area address-area address-area address-area"
+    "city-label . state-label zip-label"
+    "city-area city-area state-area zip-area";
+  grid-gap: 12px;
+  border: 2px solid #fc273f;
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .5);
+  margin-bottom: 2rem;
+`
+
 const InputField = ({ label, ...props }) => {
   const [field, meta] = useField(props);
   return (
     <>
-      <label htmlFor={props.id || props.name}>{label}</label>
       <input className="input-field" {...field} {...props} />
       {meta.touched && meta.error ? (
         <div className="error">{meta.error}</div>
@@ -61,51 +80,95 @@ export default function Install() {
       }}
     >
     <Layout>
-      <title>
+      <Title>
         Installation Checklist
-      </title>
+      </Title>
       <Form>
-        <InputField
-          label="CS Number"
-          name="csNumber"
-          type="text"
-          placeholder="CS Number"
-        />
+        <FormFields>
+          <label
+            htmlFor="csNumber"
+            className="csLabel"
+          >
+            CS Number
+          </label>
+          <InputField
+            label="CS Number"
+            name="csNumber"
+            className="csInputField"
+            type="text"
+            placeholder="CS Number"
+          />
 
-        <InputField
-          label="Customer"
-          name="customer"
-          type="text"
-          placeholder="Customer Name"
-        />
+          <label
+            htmlFor="customer"
+            className="customerLabel"
+          >
+            Customer
+          </label>
+          <InputField
+            label="Customer"
+            name="customer"
+            className="customerInputField"
+            type="text"
+            placeholder="Customer Name"
+          />
 
-        <InputField
-          label="Address"
-          name="address"
-          type="text"
-          placeholder="Address"
-        />
+          <label
+            htmlFor="address"
+            className="addressLabel"
+          >
+            Address
+          </label>
+          <InputField
+            label="Address"
+            name="address"
+            className="addressInputField"
+            type="text"
+            placeholder="Address"
+          />
 
-        <InputField
-          label="City"
-          name="city"
-          type="text"
-          placeholder="City"
-        />
+          <label
+            htmlFor="city"
+            className="cityLabel"
+          >
+            City
+          </label>
+          <InputField
+            label="City"
+            name="city"
+            className="cityInputField"
+            type="text"
+            placeholder="City"
+          />
 
-        <InputField
-          label="State"
-          name="stateField"
-          type="text"
-          placeholder="State"
-        />
+          <label
+            htmlFor="stateField"
+            className="stateLabel"
+          >
+            State
+          </label>
+          <InputField
+            label="State"
+            name="stateField"
+            className="stateInputField"
+            type="text"
+            placeholder="State"
+          />
 
-        <InputField
-          label="ZIP"
-          name="zip"
-          type="text"
-          placeholder="ZIP"
-        />
+          <label
+            htmlFor="zip"
+            className="zipLabel"
+          >
+            Zip Code
+          </label>
+          <InputField
+            label="ZIP"
+            name="zip"
+            className="zipInputField"
+            type="text"
+            placeholder="ZIP"
+          />
+        </FormFields>
 
         {/* Radio button option groups will go in this section */}
 
