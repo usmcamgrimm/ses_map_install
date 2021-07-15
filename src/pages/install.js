@@ -26,10 +26,10 @@ const FormFields = styled.div`
     "cityLabel . stateLabel zipLabel"
     "city-area city-area state-area zip-area";
   grid-gap: 12px;
-  border: 2px solid #fc273f;
-  border-radius: 6px;
-  padding: 12px 18px 12px 2px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .5);
+  // border: 2px solid #fc273f;
+  // border-radius: 6px;
+  // padding: 12px 18px 12px 2px;
+  // box-shadow: 0 4px 12px rgba(0, 0, 0, .5);
   margin-bottom: 2rem;
   width: 60vw;
   @media screen and (min-width: 1024px) {
@@ -228,17 +228,32 @@ export default function Install() {
           />
         </FormFields>
 
-        {/* Radio button option groups will go in this section */}
+        <div class="checklistItems">
+          {/* Radio button option groups will go in this section */}
+          <div class="radioListOptions">
+            This is a selection option.
+          </div>
+          <div role="group" aria-labelledby="radioListGroup">
+            <label>
+              <Field type="radio" name="select" value="Yes" />
+              Yes
+            </label>
+            <label>
+              <Field type="radio" name="select" value="N/A" />
+              N/A
+            </label>
+          </div>
 
-        <label htmlFor="installNotes">Install Notes</label>
-        <Field
-          name="installNotes"
-          className="installNotes"
-          placeholder="Enter any additional information here"
-          type="text-area"
-        />
+          <label htmlFor="installNotes">Install Notes</label>
+          <Field
+            name="installNotes"
+            className="installNotes"
+            placeholder="Enter any additional information here"
+            type="text-area"
+          />
 
-        <button type="submit">Generate PCC</button>
+          <button type="submit">Generate PCC</button>
+        </div>
       </Form>
     </Layout>
     </Formik>
