@@ -36,6 +36,13 @@ const FormFields = styled.div`
     width: 50vw;
 `
 
+const InstallItems = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
+
 const InputField = ({ label, ...props }) => {
   const [field, meta] = useField(props);
   return (
@@ -234,20 +241,189 @@ export default function Install() {
           />
         </FormFields>
 
-        <div class="checklistItems">
-          {/* Radio button option groups will go in this section */}
-          <div class="radioListOptions">
-            This is a selection option.
-          </div>
-          <div role="group" aria-labelledby="radioListGroup">
-            <label>
-              <Field type="radio" name="select" value="Yes" />
-              Yes
-            </label>
-            <label>
-              <Field type="radio" name="select" value="N/A" />
-              N/A
-            </label>
+        <InstallItems>
+          <div class="checklistItems">
+            <div class="radioListOptions">
+              This is a selection option.
+            </div>
+            <div role="group" aria-labelledby="radioListGroup">
+              <label>
+                <Field type="radio" name="select" value="Yes" />
+                Yes
+              </label>
+              <label>
+                <Field type="radio" name="select" value="N/A" />
+                N/A
+              </label>
+            </div>
+
+            <div class="radioListOptions">
+              This is a selection option.
+            </div>
+            <div role="group" aria-labelledby="radioListGroup">
+              <label>
+                <Field type="radio" name="select" value="Yes" />
+                Yes
+              </label>
+              <label>
+                <Field type="radio" name="select" value="N/A" />
+                N/A
+              </label>
+            </div>
+
+            <div class="radioListOptions">
+              This is a selection option.
+            </div>
+            <div role="group" aria-labelledby="radioListGroup">
+              <label>
+                <Field type="radio" name="select" value="Yes" />
+                Yes
+              </label>
+              <label>
+                <Field type="radio" name="select" value="N/A" />
+                N/A
+              </label>
+            </div>
+
+            <div class="radioListOptions">
+              This is a selection option.
+            </div>
+            <div role="group" aria-labelledby="radioListGroup">
+              <label>
+                <Field type="radio" name="select" value="Yes" />
+                Yes
+              </label>
+              <label>
+                <Field type="radio" name="select" value="N/A" />
+                N/A
+              </label>
+            </div>
+
+            <div class="radioListOptions">
+              This is a selection option.
+            </div>
+            <div role="group" aria-labelledby="radioListGroup">
+              <label>
+                <Field type="radio" name="select" value="Yes" />
+                Yes
+              </label>
+              <label>
+                <Field type="radio" name="select" value="N/A" />
+                N/A
+              </label>
+            </div>
+
+            <div class="radioListOptions">
+              This is a selection option.
+            </div>
+            <div role="group" aria-labelledby="radioListGroup">
+              <label>
+                <Field type="radio" name="select" value="Yes" />
+                Yes
+              </label>
+              <label>
+                <Field type="radio" name="select" value="N/A" />
+                N/A
+              </label>
+            </div>
+
+            <div class="radioListOptions">
+              This is a selection option.
+            </div>
+            <div role="group" aria-labelledby="radioListGroup">
+              <label>
+                <Field type="radio" name="select" value="Yes" />
+                Yes
+              </label>
+              <label>
+                <Field type="radio" name="select" value="N/A" />
+                N/A
+              </label>
+            </div>
+
+            <div class="radioListOptions">
+              This is a selection option.
+            </div>
+            <div role="group" aria-labelledby="radioListGroup">
+              <label>
+                <Field type="radio" name="select" value="Yes" />
+                Yes
+              </label>
+              <label>
+                <Field type="radio" name="select" value="N/A" />
+                N/A
+              </label>
+            </div>
+
+            <div class="radioListOptions">
+              This is a selection option.
+            </div>
+            <div role="group" aria-labelledby="radioListGroup">
+              <label>
+                <Field type="radio" name="select" value="Yes" />
+                Yes
+              </label>
+              <label>
+                <Field type="radio" name="select" value="N/A" />
+                N/A
+              </label>
+            </div>
+
+            <div class="radioListOptions">
+              This is a selection option.
+            </div>
+            <div role="group" aria-labelledby="radioListGroup">
+              <label>
+                <Field type="radio" name="select" value="Yes" />
+                Yes
+              </label>
+              <label>
+                <Field type="radio" name="select" value="N/A" />
+                N/A
+              </label>
+            </div>
+
+            <div class="radioListOptions">
+              This is a selection option.
+            </div>
+            <div role="group" aria-labelledby="radioListGroup">
+              <label>
+                <Field type="radio" name="select" value="Yes" />
+                Yes
+              </label>
+              <label>
+                <Field type="radio" name="select" value="N/A" />
+                N/A
+              </label>
+            </div>
+
+            <div class="radioListOptions">
+              This is a selection option.
+            </div>
+            <div role="group" aria-labelledby="radioListGroup">
+              <label>
+                <Field type="radio" name="select" value="Yes" />
+                Yes
+              </label>
+              <label>
+                <Field type="radio" name="select" value="N/A" />
+                N/A
+              </label>
+            </div>
+
+            <div class="radioListOptions">
+              This is a selection option.
+            </div>
+            <div role="group" aria-labelledby="radioListGroup">
+              <label>
+                <Field type="radio" name="select" value="Yes" />
+                Yes
+              </label>
+              <label>
+                <Field type="radio" name="select" value="N/A" />
+                N/A
+              </label>
+            </div>
           </div>
 
           <label htmlFor="installNotes">Install Notes</label>
@@ -259,7 +435,7 @@ export default function Install() {
           />
 
           <button type="submit">Generate PCC</button>
-        </div>
+        </InstallItems>
       </Form>
     </Layout>
     </Formik>
