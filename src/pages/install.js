@@ -26,14 +26,14 @@ const FormFields = styled.div`
     "cityLabel . stateLabel zipLabel"
     "city-area city-area state-area zip-area";
   grid-gap: 12px;
-  // border: 2px solid #fc273f;
-  // border-radius: 6px;
-  // padding: 12px 18px 12px 2px;
-  // box-shadow: 0 4px 12px rgba(0, 0, 0, .5);
+  border: 2px solid #fc273f;
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .5);
   margin-bottom: 2rem;
-  width: 60vw;
+  width: 80vw;
   @media screen and (min-width: 1024px) {
-    width: 30vw;
+    width: 50vw;
 `
 
 const InputField = ({ label, ...props }) => {
@@ -107,6 +107,7 @@ export default function Install() {
             placeholder="CS Number"
             css={{
               gridArea: "cs-area",
+              fontSize: "1rem",
               padding: "4px",
               borderRadius: "4px"
             }}
@@ -130,6 +131,7 @@ export default function Install() {
             placeholder="Customer Name"
             css={{
               gridArea: "customer-area",
+              fontSize: "1rem",
               padding: "4px",
               borderRadius: "4px"
             }}
@@ -153,7 +155,8 @@ export default function Install() {
             placeholder="Address"
             css={{
               gridArea: "address-area",
-              padding: "8px",
+              fontSize: "1rem",
+              padding: "4px",
               borderRadius: "4px"
             }}
           />
@@ -176,7 +179,8 @@ export default function Install() {
             placeholder="City"
             css={{
               gridArea: "city-area",
-              padding: "8px",
+              fontSize: "1rem",
+              padding: "4px",
               borderRadius: "4px"
             }}
           />
@@ -199,7 +203,8 @@ export default function Install() {
             placeholder="State"
             css={{
               gridArea: "state-area",
-              padding: "8px",
+              fontSize: "1rem",
+              padding: "4px",
               borderRadius: "4px"
             }}
           />
@@ -222,7 +227,8 @@ export default function Install() {
             placeholder="ZIP"
             css={{
               gridArea: "zip-area",
-              padding: "8px",
+              fontSize: "1rem",
+              padding: "4px",
               borderRadius: "4px"
             }}
           />
