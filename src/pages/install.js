@@ -43,6 +43,17 @@ const InstallItems = styled.div`
     align-items: center;
 `
 
+const RadioListOptions = styled.div`
+    margin-bottom: 8px;
+`
+
+const RadioGroup = styled.div`
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+`
+
 const InputField = ({ label, ...props }) => {
   const [field, meta] = useField(props);
   return (
@@ -243,10 +254,12 @@ export default function Install() {
 
         <InstallItems>
           <div class="checklistItems">
-            <div class="radioListOptions">
+            <RadioListOptions>
+              <p css={{ fontSize: "1.2rem" }}>
               This is a selection option.
-            </div>
-            <div role="group" aria-labelledby="radioListGroup">
+              </p>
+            </RadioListOptions>
+            <RadioGroup role="group" aria-labelledby="radioListGroup">
               <label>
                 <Field type="radio" name="select" value="Yes" />
                 Yes
@@ -255,12 +268,14 @@ export default function Install() {
                 <Field type="radio" name="select" value="N/A" />
                 N/A
               </label>
-            </div>
+            </RadioGroup>
 
-            <div class="radioListOptions">
+            <RadioListOptions>
+              <p css={{ fontSize: "1.2rem" }}>
               This is a selection option.
-            </div>
-            <div role="group" aria-labelledby="radioListGroup">
+              </p>
+            </RadioListOptions>
+            <RadioGroup role="group" aria-labelledby="radioListGroup">
               <label>
                 <Field type="radio" name="select" value="Yes" />
                 Yes
@@ -269,12 +284,14 @@ export default function Install() {
                 <Field type="radio" name="select" value="N/A" />
                 N/A
               </label>
-            </div>
+            </RadioGroup>
 
-            <div class="radioListOptions">
+            <RadioListOptions>
+              <p css={{ fontSize: "1.2rem" }}>
               This is a selection option.
-            </div>
-            <div role="group" aria-labelledby="radioListGroup">
+              </p>
+            </RadioListOptions>
+            <RadioGroup role="group" aria-labelledby="radioListGroup">
               <label>
                 <Field type="radio" name="select" value="Yes" />
                 Yes
@@ -283,12 +300,14 @@ export default function Install() {
                 <Field type="radio" name="select" value="N/A" />
                 N/A
               </label>
-            </div>
+            </RadioGroup>
 
-            <div class="radioListOptions">
+            <RadioListOptions>
+              <p css={{ fontSize: "1.2rem" }}>
               This is a selection option.
-            </div>
-            <div role="group" aria-labelledby="radioListGroup">
+              </p>
+            </RadioListOptions>
+            <RadioGroup role="group" aria-labelledby="radioListGroup">
               <label>
                 <Field type="radio" name="select" value="Yes" />
                 Yes
@@ -297,12 +316,14 @@ export default function Install() {
                 <Field type="radio" name="select" value="N/A" />
                 N/A
               </label>
-            </div>
+            </RadioGroup>
 
-            <div class="radioListOptions">
+            <RadioListOptions>
+              <p css={{ fontSize: "1.2rem" }}>
               This is a selection option.
-            </div>
-            <div role="group" aria-labelledby="radioListGroup">
+              </p>
+            </RadioListOptions>
+            <RadioGroup role="group" aria-labelledby="radioListGroup">
               <label>
                 <Field type="radio" name="select" value="Yes" />
                 Yes
@@ -311,12 +332,14 @@ export default function Install() {
                 <Field type="radio" name="select" value="N/A" />
                 N/A
               </label>
-            </div>
+            </RadioGroup>
 
-            <div class="radioListOptions">
+            <RadioListOptions>
+              <p css={{ fontSize: "1.2rem" }}>
               This is a selection option.
-            </div>
-            <div role="group" aria-labelledby="radioListGroup">
+              </p>
+            </RadioListOptions>
+            <RadioGroup role="group" aria-labelledby="radioListGroup">
               <label>
                 <Field type="radio" name="select" value="Yes" />
                 Yes
@@ -325,12 +348,14 @@ export default function Install() {
                 <Field type="radio" name="select" value="N/A" />
                 N/A
               </label>
-            </div>
+            </RadioGroup>
 
-            <div class="radioListOptions">
+            <RadioListOptions>
+              <p css={{ fontSize: "1.2rem" }}>
               This is a selection option.
-            </div>
-            <div role="group" aria-labelledby="radioListGroup">
+              </p>
+            </RadioListOptions>
+            <RadioGroup role="group" aria-labelledby="radioListGroup">
               <label>
                 <Field type="radio" name="select" value="Yes" />
                 Yes
@@ -339,12 +364,14 @@ export default function Install() {
                 <Field type="radio" name="select" value="N/A" />
                 N/A
               </label>
-            </div>
+            </RadioGroup>
 
-            <div class="radioListOptions">
+            <RadioListOptions>
+              <p css={{ fontSize: "1.2rem" }}>
               This is a selection option.
-            </div>
-            <div role="group" aria-labelledby="radioListGroup">
+              </p>
+            </RadioListOptions>
+            <RadioGroup role="group" aria-labelledby="radioListGroup">
               <label>
                 <Field type="radio" name="select" value="Yes" />
                 Yes
@@ -353,12 +380,14 @@ export default function Install() {
                 <Field type="radio" name="select" value="N/A" />
                 N/A
               </label>
-            </div>
+            </RadioGroup>
 
-            <div class="radioListOptions">
+            <RadioListOptions>
+              <p css={{ fontSize: "1.2rem" }}>
               This is a selection option.
-            </div>
-            <div role="group" aria-labelledby="radioListGroup">
+              </p>
+            </RadioListOptions>
+            <RadioGroup role="group" aria-labelledby="radioListGroup">
               <label>
                 <Field type="radio" name="select" value="Yes" />
                 Yes
@@ -367,12 +396,14 @@ export default function Install() {
                 <Field type="radio" name="select" value="N/A" />
                 N/A
               </label>
-            </div>
+            </RadioGroup>
 
-            <div class="radioListOptions">
+            <RadioListOptions>
+              <p css={{ fontSize: "1.2rem" }}>
               This is a selection option.
-            </div>
-            <div role="group" aria-labelledby="radioListGroup">
+              </p>
+            </RadioListOptions>
+            <RadioGroup role="group" aria-labelledby="radioListGroup">
               <label>
                 <Field type="radio" name="select" value="Yes" />
                 Yes
@@ -381,12 +412,14 @@ export default function Install() {
                 <Field type="radio" name="select" value="N/A" />
                 N/A
               </label>
-            </div>
+            </RadioGroup>
 
-            <div class="radioListOptions">
+            <RadioListOptions>
+              <p css={{ fontSize: "1.2rem" }}>
               This is a selection option.
-            </div>
-            <div role="group" aria-labelledby="radioListGroup">
+              </p>
+            </RadioListOptions>
+            <RadioGroup role="group" aria-labelledby="radioListGroup">
               <label>
                 <Field type="radio" name="select" value="Yes" />
                 Yes
@@ -395,12 +428,14 @@ export default function Install() {
                 <Field type="radio" name="select" value="N/A" />
                 N/A
               </label>
-            </div>
+            </RadioGroup>
 
-            <div class="radioListOptions">
+            <RadioListOptions>
+              <p css={{ fontSize: "1.2rem" }}>
               This is a selection option.
-            </div>
-            <div role="group" aria-labelledby="radioListGroup">
+              </p>
+            </RadioListOptions>
+            <RadioGroup role="group" aria-labelledby="radioListGroup">
               <label>
                 <Field type="radio" name="select" value="Yes" />
                 Yes
@@ -409,12 +444,14 @@ export default function Install() {
                 <Field type="radio" name="select" value="N/A" />
                 N/A
               </label>
-            </div>
+            </RadioGroup>
 
-            <div class="radioListOptions">
+            <RadioListOptions>
+              <p css={{ fontSize: "1.2rem" }}>
               This is a selection option.
-            </div>
-            <div role="group" aria-labelledby="radioListGroup">
+              </p>
+            </RadioListOptions>
+            <RadioGroup role="group" aria-labelledby="radioListGroup">
               <label>
                 <Field type="radio" name="select" value="Yes" />
                 Yes
@@ -423,7 +460,7 @@ export default function Install() {
                 <Field type="radio" name="select" value="N/A" />
                 N/A
               </label>
-            </div>
+            </RadioGroup>
           </div>
 
           <label htmlFor="installNotes">Install Notes</label>
